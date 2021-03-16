@@ -6,9 +6,10 @@ import dal.MessageDAO;
 import java.util.List;
 
 public class MessageManager {
+    private static MessageManager instance;
     private MessageDAO messageDAO;
 
-    public MessageManager() {
+    private MessageManager() {
         messageDAO = new MessageDAO();
     }
 
@@ -18,5 +19,12 @@ public class MessageManager {
 
     public List<Message> getAllMessages() {
         return messageDAO.getAllMessages();
+    }
+
+    public static MessageManager getInstance() {
+        if (instance == null) {
+            instance = new MessageManager();
+        }
+        return instance;
     }
 }
