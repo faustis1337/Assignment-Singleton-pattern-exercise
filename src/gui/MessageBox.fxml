@@ -7,11 +7,10 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-
-<VBox alignment="CENTER" prefHeight="331.0" prefWidth="374.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller">
+<VBox alignment="CENTER" prefHeight="331.0" prefWidth="374.0" stylesheets="@css/main.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MessageBoxController">
    <children>
-      <ListView fx:id="messageList" prefHeight="348.0" prefWidth="374.0" />
-      <HBox alignment="CENTER" prefHeight="139.0" prefWidth="374.0" spacing="5.0">
+      <ListView fx:id="messageList" prefHeight="348.0" prefWidth="374.0" styleClass="list-cell" stylesheets="@css/main.css" />
+      <HBox alignment="CENTER" prefHeight="139.0" prefWidth="374.0" spacing="5.0" styleClass="background" stylesheets="@css/main.css">
          <children>
             <TextField fx:id="messageField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="293.0" promptText="Enter Message" />
             <Button mnemonicParsing="false" onAction="#sendMessageAction" text="Send" />

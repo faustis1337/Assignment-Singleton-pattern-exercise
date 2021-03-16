@@ -1,0 +1,35 @@
+.button{
+    -fx-background-color: white;
+    -fx-background-size: 100% 100%;
+    -fx-border-radius: 6;
+    -fx-border-color: #FFAE42;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-border-width: 0;
+}
+
+.button:hover{
+    -fx-background-color: 	#bfee90;
+    -fx-text-fill: black;
+}
+
+.button:pressed{
+    -fx-background-color: white;
+    -fx-border-width: 0;
+}
+
+.background{
+    -fx-background-color: black;
+    -fx-background-size: 100% 100%;
+}
+
+.list-view .list-cell {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+.list-view:hover .list-cell:hover {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}

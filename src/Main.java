@@ -1,4 +1,3 @@
-import bll.MessageManager;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -9,8 +8,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("gui/sample.fxml"));
-        primaryStage.setTitle("Hello World");
+        Parent root = FXMLLoader.load(getClass().getResource("gui/MessageBox.fxml"));
+        primaryStage.setTitle("Message Storage");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }

@@ -5,11 +5,11 @@ import dal.MessageDAO;
 
 import java.util.List;
 
-public class MessageManager {
-    private static MessageManager instance;
+public class MessageFacade implements IMessageFacade {
+    private static MessageFacade instance;
     private MessageDAO messageDAO;
 
-    private MessageManager() {
+    private MessageFacade() {
         messageDAO = new MessageDAO();
     }
 
@@ -21,9 +21,9 @@ public class MessageManager {
         return messageDAO.getAllMessages();
     }
 
-    public static MessageManager getInstance() {
+    public static MessageFacade getInstance() {
         if (instance == null) {
-            instance = new MessageManager();
+            instance = new MessageFacade();
         }
         return instance;
     }

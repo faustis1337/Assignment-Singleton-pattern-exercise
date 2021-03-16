@@ -8,12 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MessageDAO {
-    private List<Message> allMessages;
     private DatabaseConnector databaseConnector;
 
     public MessageDAO() {
         databaseConnector = new DatabaseConnector();
-        allMessages = getAllMessages();
     }
 
     public List<Message> getAllMessages() {
@@ -46,4 +44,6 @@ public class MessageDAO {
             e.printStackTrace();
         }
     }
+
+
 }

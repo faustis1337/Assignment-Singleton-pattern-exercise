@@ -4,8 +4,10 @@ import be.Message;
 
 import java.util.List;
 
-public interface IMechaChatLogicFacade {
+public interface IMessageFacade {
+
     void sendMessage(String message);
+
     List<Message> getAllMessages();
 
 }
