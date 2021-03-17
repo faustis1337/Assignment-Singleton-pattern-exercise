@@ -1,16 +1,17 @@
 package bll;
 
 import be.Message;
-import dal.MessageDAO;
+import dal.IMessageDAO;
+import dal.db.MessageDB;
 
 import java.util.List;
 
 public class MessageFacade implements IMessageFacade {
     private static MessageFacade instance;
-    private MessageDAO messageDAO;
+    private IMessageDAO messageDAO;
 
     private MessageFacade() {
-        messageDAO = new MessageDAO();
+        messageDAO = new MessageDB();
     }
 
     public void sendMessage(String message) {

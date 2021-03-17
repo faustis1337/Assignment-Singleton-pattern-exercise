@@ -1,16 +1,17 @@
-package dal;
+package dal.db;
 
 import be.Message;
-import com.microsoft.sqlserver.jdbc.SQLServerException;
+import dal.IMessageDAO;
+import dal.db.DatabaseConnector;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MessageDAO {
+public class MessageDB implements IMessageDAO {
     private DatabaseConnector databaseConnector;
 
-    public MessageDAO() {
+    public MessageDB() {
         databaseConnector = new DatabaseConnector();
     }
 
