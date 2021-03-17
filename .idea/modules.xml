@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MessageStorageFacadeSingleton.iml" filepath="$PROJECT_DIR$/MessageStorageFacadeSingleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PatternExercise.iml" filepath="$PROJECT_DIR$/PatternExercise.iml" />
     </modules>
   </component>
 </project>
